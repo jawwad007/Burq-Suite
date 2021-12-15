@@ -15,6 +15,16 @@
 </head>
 
 <body>
+	<script>
+		function close(){
+		  var x = document.getElementById("cl0");
+		  if (x.style.display === "none") {
+			x.style.display = "block";
+		  } else {
+			x.style.display = "none";
+		  }
+		}
+		</script>
 
 
 	<div class="flexbox-parent">
@@ -26,6 +36,7 @@
 				<li>View</li>
 				<li>Goto</li>
 				<li>Help</li>
+				<li><a onclick="mytoggle()" style="text-decoration: none;color: white;">terminal</a></li>
 			</ul>
 		</header>
 		<div class="fill-area content flexbox-item-grow " style="background-color: #15232c;">
@@ -101,28 +112,20 @@
 					</div>
 				</div>
 				<div class="main-body" style="background-color: #16202a;">
-					<textarea rows="10" cols="100" style="height: 60vh;width: 100%;"></textarea>
+					<textarea rows="100" cols="100" style="height: 100%;width: 100%;"></textarea>
 					
 				</div>
-				<div class="window">
+				<div class="window" id="cl0">
 					
-					<div class="terminal">
+					<div class="terminal" >
 						<!-- <span>Problem</span><span>Problem</span> -->
 						<div class="topnav">
 							<a  href="#home">PROBLEMS</a>
 							<a href="#news">OUTPUT</a>
 							<a href="#contact">TERMINAL</a>
 							<a href="#about">DEBUG CONSOLE</a>
-							<div class="cl1">
-								<!-- <span class="cl1"><p style="color:white"  >POWERSHELL</p></span> -->
-							
-                			
-                
-               <!-- <-- <i class="fa fa-caret-down" aria-hidden="true" style="color: white; padding-right: 5px;"></i>
-                <i class="fa fa-trash" aria-hidden="true" style="color: white; padding-right: 5px;"></i>
-                <i class="fa fa-sort-asc" aria-hidden="true" style="color: white; padding-right: 7px;"></i>
-                <i class="fa fa-times" aria-hidden="true" style="color: white; padding-right: 5px;"></i> --> 
-							</div>
+							<a href="#"  onclick="mytoggle()" style="float: right;"> <i class="fa fa-times" aria-hidden="true" style="color: white;"></i></a> 
+
 							
 						  </div>
 						  
@@ -150,6 +153,16 @@
 		
 	</div>
 
+	<script>
+		function mytoggle(){
+		  var x = document.getElementById("cl0");
+		  if (x.style.display === "none") {
+			x.style.display = "block";
+		  } else {
+			x.style.display = "none";
+		  }
+		}
+		</script>
 </body>
 
 </html>
