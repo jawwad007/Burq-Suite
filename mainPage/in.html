@@ -121,7 +121,7 @@
         <div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12"><button class=" btn btn-neon" type="button">Verify RTL</button></div>
+                    <div class="col-md-12"><button class=" btn btn-neon" type="button" onclick="verifywindow()">Verify RTL</button></div>
                 </div>
             </div>
         </div>
@@ -239,8 +239,8 @@
                                 
                                 <h1 style="color: rgb(238,241,244);margin-left: 70px;font-size: 36px;">Start</h1>
                                 <div style="display: flex;margin-left: 100px;" onclick="open_terminal()"><i class="fa fa-file-text" style="color: rgb(242,245,248);margin-top: 10px;"></i><a href="#" style="color: rgb(255,255,255);margin-left: 10px;margin-top: 9px;text-decoration: none;">Open File</a></div>
-                                <div style="display: flex;margin-right: 100px;"onclick="open_terminal()"><i class="fa fa-folder-open" style="margin-left: 90px;color: rgb(240,244,248);margin-top: 10px;"></i><a href="#" style="color: rgb(238,244,252);width: 200px;margin-left: 10px;margin-top: 9px;text-decoration: none;">Open Folder</a></div>
-                                <div style="display: flex;border-style: none;margin-left: 100px;/*margin-left: 10px;*/"onclick="open_terminal()"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-file-plus" style="margin-left: 80px;color: rgb(224,230,237);width: 36.7px;height: 22px;margin-top: 5px;">
+                                <div style="display: flex;margin-left: 10px;"onclick="open_terminal()"><i class="fa fa-folder-open" style="margin-left: 90px;color: rgb(240,244,248);margin-top: 10px;"></i><a href="#" style="color: rgb(238,244,252);width: 200px;margin-left: 10px;margin-top: 9px;text-decoration: none;">Open Folder</a></div>
+                                <div style="display: flex;border-style: none;margin-left: 10px;/*margin-left: 10px;*/"onclick="open_terminal()"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-file-plus" style="margin-left: 80px;color: rgb(224,230,237);width: 36.7px;height: 22px;margin-top: 5px;">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                         <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
                                         <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
@@ -261,7 +261,7 @@
                                 </div>
                                 <div>
                                     <div class="container">
-                                        <div style="display: flex;margin-left: 100px;"><button class=" btn btn-neon bwidth" class="fa fa-star" type="button" style="text-align: left;"><i class="fa fa-file-text" type="file-plus"></i> Custom Config SoC
+                                        <div style="display: flex;margin-left: 100px;"><button class=" btn btn-neon bwidth" class="fa fa-star" type="button" style="text-align: left;"><i class="fas fa-microchip" type="file-plus"></i> Custom Config SoC
                             </button>
                             </div>
                                     </div>
@@ -269,25 +269,25 @@
                                 <div>
                                     <div class="container">
                                         <div style="margin-right: 200px;margin-left: 100px;">  <a href="./task/htmlfile.html" style="color: rgb(255, 255, 255); text-decoration: none;"> <button class=" btn btn-neon bwidth
-                            "  class="fa fa-star" type="button" style="text-align: left;">   <i class="fa fa-file-text" type="file-plus" > </i>               Custom Config Core</a> </button></div>
+                            "  class="fa fa-star" type="button" style="text-align: left;">  <i class="fas fa-ticket-alt" type="file-plus"> </i>               Custom Config Core</a> </button></div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="container">
                                         <div style="margin-right: 200px;margin-left: 100px;"><button class=" btn btn-neon bwidth
-                            "  class="fa fa-star" type="button" style="text-align: left;"><i class="fa fa-file-text" type="file-plus"> </i> verification                
+                            "  class="fa fa-star" type="button" style="text-align: left;"><i class="fa fa-check-circle" type="file-plus"> </i> verification                
                             </button></div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="container">
-                                        <div style="margin-right: 200px;margin-left: 100px;"><button class=" btn btn-neon bwidth"  class="fa fa-star" type="button" style="text-align: left;">   <i class="fa fa-file-text" type="file-plus"> </i> Customize Core </button></div>
+                                        <div style="margin-right: 200px;margin-left: 100px;"><button class=" btn btn-neon bwidth"  class="fa fa-star" type="button" style="text-align: left;">   <i class="fas fa-memory" type="file-plus"> </i> Customize Core </button></div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="container">
                                         <div style="margin-right: 200px;margin-left: 100px;"><button class=" btn btn-neon bwidth
-                            "  class="fa fa-star" type="button" style="text-align: left;">   <i class="fa fa-file-text" type="file-plus"> </i> Software Development Kit </button></div>
+                            "  class="fa fa-star" type="button" style="text-align: left;">   <i class="fas fa-suitcase" type="file-plus"> </i> Software Development Kit </button></div>
                                     </div>
                                 </div>
                             </div>
@@ -370,7 +370,7 @@
             y.rows="100";
 		  }
 		}
-        
+    
     </script>
 
     
