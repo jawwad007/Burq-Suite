@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="assets/codemirror/codemirror-5.65.0/theme/erlang-dark.css">
     <link rel="stylesheet" href="assets/codemirror/codemirror-5.65.0/lib/codemirror.css">
     <script src="assets/codemirror/codemirror-5.65.0/mode/clike/clike.js"></script>
+    <script src="assets/codemirror/codemirror-5.65.0/addon/display/autorefresh.js"></script>
 </head>
 
 <body style="/*border-color: rgb(21,35,45);*//*height: auto;*/overflow-y: hidden;/*margin-right: 0px;*//*width: 100%;*//*margin-bottom: 0;*//*background: rgb(230,220,220);*/">
@@ -381,7 +382,8 @@
             lineNumbers: true,
             matchBrackets: true,
             theme: "erlang-dark",
-            mode: "text/x-scala"
+            mode: "text/x-scala",
+            autoRefresh: true
         }
     );
     </script>
