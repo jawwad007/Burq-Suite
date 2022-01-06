@@ -28,6 +28,10 @@
     <link rel="stylesheet" href="assets/codemirror/codemirror-5.65.0/lib/codemirror.css">
     <script src="assets/codemirror/codemirror-5.65.0/mode/clike/clike.js"></script>
     <script src="assets/codemirror/codemirror-5.65.0/addon/display/autorefresh.js"></script>
+
+    <!-- Backend -->
+    <script src="/eel.js" type="text/javascript"></script>
+    <script src="assets/js/script.js"></script>
 </head>
 
 <body style="/*border-color: rgb(21,35,45);*//*height: auto;*/overflow-y: hidden;/*margin-right: 0px;*//*width: 100%;*//*margin-bottom: 0;*//*background: rgb(230,220,220);*/">
@@ -186,15 +190,21 @@
                 
                 <div style="background: #0c151b;height: 30px;width: 200px;display: flex;"><button class="btn btn-primary" type="button" style="background: #0c151b;border-style: none;">Explorer</button>
                     
-                    <div><button class="btn btn-primary " area-expanded="false" type="button" data-bs-toggle="dropdown" style="margin-left: 90px;background: #0c151b;border-style: none;height: 30px;"><i class="icon-options d-xl-flex justify-content-xl-start align-items-xl-end" style="width: 20px;height: 20px;color: rgb(222,227,232);margin: 0px;border-style: none;"></i><span class="caret"></span></button>
+                    <div>
+                        <button class="btn btn-primary " area-expanded="false" type="button" data-bs-toggle="dropdown" style="margin-left: 90px;background: #0c151b;border-style: none;height: 30px;"><i class="icon-options d-xl-flex justify-content-xl-start align-items-xl-end" style="width: 20px;height: 20px;color: rgb(222,227,232);margin: 0px;border-style: none;"></i><span class="caret"></span></button>
                         <ul class="dropdown-menu" style="width: 200px; background:#15232D ; color: rgb(255, 255, 255);">
                             
                             <li><i class="typcn typcn-tick  " style="width: 20px;height: 20px;color: rgb(222,227,232);margin: 0px;border-style: none;">
                                 <a href="#" style="margin-left:10px;color: rgb(255, 255, 255); text-decoration: none;">Open Editor</a></i></li>
                             <li><i class="typcn typcn-tick " style="width: 20px;height: 20px;color: rgb(222,227,232);margin: 0px;border-style: none; margin-bottom: 10px;">
-                                <a href="#" style="margin-left:10px;margin-top: 10px;color: rgb(255, 255, 255); text-decoration: none;"> Folder</a></i></li>
-                            <li><i class="typcn typcn-tick " style="width: 20px;height: 20px;color: rgb(222,227,232);margin: 0px;border-style: none;">
-                                <a href="#" style="margin-left:10px;color: rgb(255, 255, 255); text-decoration: none;"> Author</a></i></li>
+                                <a href="#" style="margin-left:10px;margin-top: 10px;color: rgb(255, 255, 255); text-decoration: none;">New Folder</a></i></li>
+                            <li>
+                                <button id="newfile" style="border: none; background-color: inherit;" onclick="new_file()">
+                                    <i class="typcn typcn-tick " style="width: 20px;height: 20px;color: rgb(222,227,232);margin: 0px;border-style: none;">
+                                        New File
+                                    <!-- <a href="#" style="margin-left:10px;color: rgb(255, 255, 255); text-decoration: none;">New File</a>--></i>
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -202,10 +212,10 @@
                     <div class="dropdown">
                         <button class="btn btn-primary dropdown-toggle" area-expanded="false" type="button" data-bs-toggle="dropdown" style="height: 29px;width: 71.4px;color: rgb(255, 255, 255);background: rgb(25,53,73);border-style: none;">Folder <span class="caret"></span>
                         </button>
-                        <ul class="dropdown-menu" style="width: 200px; background:#15232D; color: rgb(255, 255, 255);">
-                            <li><a href="#" style="color: rgb(255, 255, 255); text-decoration: none;">filename1</a></li>
+                        <ul id="tree" class="dropdown-menu" style="width: 200px; background:#15232D; color: rgb(255, 255, 255);">
+                            <!-- <li><a href="#" style="color: rgb(255, 255, 255); text-decoration: none;">filename1</a></li>
                             <li><a href="#" style="color: rgb(255, 255, 255); text-decoration: none;">filename2</a></li>
-                            <li><a href="#" style="color: rgb(255, 255, 255); text-decoration: none;">filename3</a></li>
+                            <li><a href="#" style="color: rgb(255, 255, 255); text-decoration: none;">filename3</a></li> -->
                         </ul>
                     </div> 
                 
