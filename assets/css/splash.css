@@ -58,7 +58,7 @@ p{
     color: #ea5485;
 }
 .temp-btn:nth-child(1):hover{
-    color: white;
+    color: #1a1d22;
     background-color: #ea5485;
 }
 
@@ -66,7 +66,7 @@ p{
     color: #0fc89c;
 }
 .temp-btn:nth-child(2):hover{
-    color: white;
+    color: #1a1d22;
     background-color: #0fc89c;
 }
 
@@ -74,7 +74,7 @@ p{
     color: #bc6ee9;
 }
 .temp-btn:nth-child(3):hover{
-    color: white;
+    color: #1a1d22;
     background-color: #bc6ee9;
 }
 
@@ -82,7 +82,7 @@ p{
     color: #379afc;
 }
 .temp-btn:nth-child(4):hover{
-    color: white;
+    color: #1a1d22;
     background-color: #379afc;
 }
 
