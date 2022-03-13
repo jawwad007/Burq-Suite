@@ -28,4 +28,8 @@ npm install
 then finally run the app
 ```bash
 npm start
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 1ce83e79f408fe55e2f6295e4ddaae43ab85da43
