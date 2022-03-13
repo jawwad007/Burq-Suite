@@ -17,7 +17,7 @@ const createSplashWindow = () => {
 
 
 app.whenReady().then(() => {
-    createSplashWindow()
+    createMainWindow()
 });
 
 
